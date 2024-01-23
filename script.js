@@ -25,7 +25,7 @@ $(document).on('keypress',function(e) {
 
         switch (input) {
             case "help":
-                $('<div class="output">This is the output</div>').insertBefore('#command');
+                $('<div class="output">help, aboutme, resume, clear, date, pwd, github, email, linkedin<br>(Please note that all commands are case sensitive.)</div>').insertBefore('#command');
                 break;
         
             case "resume":
