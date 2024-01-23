@@ -1,0 +1,152 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Variables */
+:root {
+  --primarycolour: ;
+  --secondarycolour: ;
+  --primaryfont: ;
+  --secondaryfont: ;
+}
+
+body{
+  background-image: url(images/wallpaper_blue.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  font-weight: lighter;
+  font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 400;
+}
+
+.terminal{
+  background-color: #343A3C;
+  color: #fff;
+  margin: 4%;
+  border-radius: 12px;
+  width: 90%;
+  box-shadow: 3px 3px 3px  #000 ;
+}
+
+.titlebar{
+  background-color: #2B2B2B;
+  text-align: center;
+  font-size: 16px;
+  padding: 6px 0px;
+  border-radius: 12px 12px 0px 0px;
+}
+
+.terminalwindow{
+  /* overflow-y: scroll; */
+  height: 80vh;
+  display: block;
+  position: relative;
+  /* height: auto; */
+  padding-bottom: 10px;
+}
+
+.terminalwindow .terminaltext{
+  overflow-y: scroll;
+  margin: 0px 0px 10px 0px;
+  height: 78vh;
+
+}
+
+.terminalwindow * {
+  font-size: 20px;
+  margin: 4px 16px;
+}
+.terminalwindow .intro{
+  color: #34E2E2;
+  font-weight: 400;
+}
+
+.terminalwindow .help {
+  font-weight: 400;
+}
+
+.terminalwindow .ascii{
+  font-size: 9px;
+  font-family: monospace;
+  white-space: pre-wrap;
+  color: #34E2E2;
+  margin: -10px 0px 0px 6px;
+  font-weight: 700;
+}
+
+.terminalwindow .help .highlight{
+  color: #34E2E2;
+  background-color: #0f4848;
+  margin-left: 1px;
+  font-weight: 700;
+}
+
+.terminalwindow .command {
+  display: flex;
+  flex-wrap: wrap;
+} 
+
+.terminalwindow .command *{
+  margin: 0px;
+}
+
+.terminalwindow .command .username{
+  color: #8AE234;
+}
+
+.terminalwindow .command .location{
+  margin-right: 6px;
+}
+
+.terminalwindow .command .entercmd{
+  background: none;
+  border: none;
+  width: 50vw;
+  cursor: block;
+  /* margin: 0px 6px; */
+  color: #2BB5FF;
+  font-weight: 700;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+
+input[type='text'].entercmd{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 700;
+}
+
+.terminalwindow .output{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 400;
+}
+
+.terminal .output a{
+  color: #34E2E2;
+  text-decoration: underline;
+  margin: 0;
+}
