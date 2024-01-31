@@ -51,8 +51,7 @@ $(document).on('keypress',function(e) {
                 break;
 
              case "email":
-                $('<div class="output"><a href="mailto:john.t.machado@gmail.com" target="_blank">Click here if you are not automatically redirected.</a></div>').insertBefore('#command');
-                window.location.href = "mailto:john.t.machado@gmail.com";
+                $('<div class="output"><a href="mailto:john.t.machado@gmail.com" target="_blank">john.t.machado@gmail.com</a></div>').insertBefore('#command');
                  break;
 
             case "github":
